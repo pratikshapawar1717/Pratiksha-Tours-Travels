@@ -1,0 +1,475 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    background:#36494E;
+}
+
+.logo{
+
+    color:white;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:500;
+}
+
+.call-btn{
+
+    text-decoration:none;
+
+    background:#A9CEF4;
+
+    color:#111827;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+
+    padding:50px 8% 80px;
+
+    text-align:center;
+}
+
+.hero h1{
+
+    color:#36494E;
+
+    font-size:3.5rem;
+
+    margin-bottom:30px;
+}
+
+.hero-video{
+
+    width:100%;
+
+    max-width:1100px;
+
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    display:block;
+
+    margin:auto;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.hero h2{
+
+    margin-top:40px;
+
+    color:#36494E;
+
+    font-size:2rem;
+}
+
+.hero p{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    line-height:1.8;
+
+    font-size:1.1rem;
+
+    color:#555;
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    background:#597081;
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:10px;
+
+    font-weight:600;
+}
+/* VEHICLES */
+
+.vehicles{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    color:#36494E;
+    margin-bottom:50px;
+}
+
+.vehicle-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.vehicle-card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+    transition:all 0.35s ease;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+}
+
+.vehicle-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+
+.vehicle-image{
+    position:relative;
+    height:240px;
+    overflow:hidden;
+}
+
+.vehicle-image img{
+    width:100%;
+    height:240px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.5s ease;
+}
+.vehicle-card:hover .vehicle-image img{
+    transform:scale(1.08);
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    background:#36494E;
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:0.85rem;
+    font-weight:600;
+}
+
+.vehicle-info{
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+.vehicle-info h3{
+    color:#36494E;
+    margin-bottom:10px;
+}
+
+.vehicle-info p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.vehicle-btn{
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#597081;
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    margin-top:auto;
+}
+/* REVIEWS */
+
+.reviews{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.review-subtitle{
+    text-align:center;
+    color:#666;
+    margin-top:-20px;
+    margin-bottom:40px;
+}
+
+.reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.review-card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+.review-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
+/* CONTACT */
+
+.contact{
+    padding:80px 8%;
+}
+
+.contact-card{
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.contact-card h3{
+    color:#36494E;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.contact-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.contact-info{
+    margin:30px 0;
+}
+
+.contact-btn{
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-weight:600;
+}
+.contact-card{
+    transition:0.3s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+}
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+    z-index:999;
+}
+.footer{
+    background:#36494E;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer h3{
+    margin-bottom:10px;
+}
+
+.footer p{
+    margin:8px 0;
+}
+/* WHY CHOOSE US */
+
+.why-us{
+    padding:80px 8%;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+}
+
+.why-card h3{
+    color:#36494E;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero h2{
+        font-size:1.4rem;
+    }
+
+    .hero-video{
+        height:300px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .contact-card{
+        padding:30px 20px;
+    }
+
+    .review-card img{
+        height:auto;
+    }
+}
